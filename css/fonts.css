@@ -1,0 +1,22 @@
+/* 
+    Document   : fonts
+    Created on : 2.12.2012, 17:47:55
+    Author     : Niina
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+@font-face {
+    font-family: MyCustomFontH1;
+    src: url('../fonts/DoubleFeature20.ttf');
+}
+
+
+@font-face {
+    font-family: MyCustomFontH2;
+    src: url('../fonts/RockFont.ttf');
+}

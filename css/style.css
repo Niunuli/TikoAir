@@ -1,0 +1,121 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+#game {
+    width: 640px;
+    height: 700px;
+	background-color: #70c9e3;
+    border: 2px solid rgba(0,0,80,0.5);
+    border-radius:25px;
+    margin: 0 auto;
+}
+
+#my_canvas {
+   border-radius:25px;
+   margin: 20px;
+   box-shadow: 0 0 64px rgba(0, 0, 0, 0.6);
+}
+
+
+h1 {	
+    text-align: center;
+    text-shadow: 5px 5px 5px #3366FF;
+    font: 100% 'MyCustomFontH1';
+    font-size: 50px; 
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 5px 5px 5px #3366FF;
+    font: 100% 'MyCustomFontH2';
+    font-size: 50px;
+	margin: 0 auto;	
+}
+
+/*game over*/
+#score{
+    position: absolute;
+	top: 190px;
+	display: none; 
+	padding: 50px;
+}
+
+#buttons{
+    position: absolute;
+	padding-left: 30px;
+}
+
+#reset {
+padding: 40px;
+position: absolute;
+}
+
+.button {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  text-shadow: 0px 1px 0px #666666;
+  -webkit-box-shadow: 0px 1px 3px #3366FF;
+  -moz-box-shadow: 0px 1px 3px #3366FF;
+  box-shadow: 0px 1px 3px #3366FF;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
+@keyframes rotater {
+0% { transform:rotate(0) scale(1) }
+50% { transform:rotate(360deg) scale(2) }
+100% { transform:rotate(720deg) scale(1) }
+}
+
+#newScore{
+	display: none; 
+	position: absolute;
+	top: 230px;
+	padding: 30px;	
+}
+	
+#newScore:hover{
+
+	/* safari / chrome / mozilla */
+	animation-name:rotater; 
+	animation-duration:500ms; 
+	animation-iteration-count:1; 
+	animation-timing-function: ease-out;
+
+	/* opera */
+	-o-transform:rotate(360deg) scale(2);
+	-o-transition-duration:500ms;
+	-o-transition-timing-function: ease-out;
+
+	/* ie */
+	-ms-transform:rotate(360deg) scale(2);
+	-ms-transform-duration:500ms;
+	-ms-transform-timing-function: ease-out;
+}
